@@ -61,6 +61,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "View Quotes";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 
@@ -88,6 +89,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // MainMenu
             // 
@@ -101,7 +103,11 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.addQuote);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Megadesk";
             this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);

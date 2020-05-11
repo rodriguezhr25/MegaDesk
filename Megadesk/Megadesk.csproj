@@ -66,20 +66,23 @@
     <Compile Include="DisplayQuote.Designer.cs">
       <DependentUpon>DisplayQuote.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewAllQuotes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewAllQuotes.Designer.cs">
-      <DependentUpon>ViewAllQuotes.cs</DependentUpon>
-    </Compile>
     <Compile Include="SearchQuotes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SearchQuotes.Designer.cs">
       <DependentUpon>SearchQuotes.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewAllQuotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllQuotes.Designer.cs">
+      <DependentUpon>ViewAllQuotes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddQuote.resx">
+      <DependentUpon>AddQuote.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +98,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SearchQuotes.resx">
+      <DependentUpon>SearchQuotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllQuotes.resx">
+      <DependentUpon>ViewAllQuotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\AddQuote.datasource" />
+    <None Include="Properties\DataSources\Desk.datasource" />
+    <None Include="Properties\DataSources\DeskQuote.datasource" />
+    <None Include="Properties\DataSources\DisplayQuote.datasource" />
+    <None Include="Properties\DataSources\MainMenu.datasource" />
+    <None Include="Properties\DataSources\Megadesk.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Megadesk.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\SearchQuotes.datasource" />
+    <None Include="Properties\DataSources\ViewAllQuotes.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
