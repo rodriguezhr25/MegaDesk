@@ -189,7 +189,7 @@ namespace Megadesk
                 case "Pine":
                     materialCost = 50;
                     break;
-                case "Rosewwod":
+                case "Rosewood":
                     materialCost = 300;
                     break;
                 case "Veneer":
@@ -214,7 +214,7 @@ namespace Megadesk
            
             if (deskSize > 1000)
             {
-                surfaceExtra = deskSize;
+                surfaceExtra = deskSize - 1000;
             }
             sizeCost = surfaceExtra + BASE_PRICE;
             return sizeCost;           

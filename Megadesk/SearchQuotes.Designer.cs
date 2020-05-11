@@ -30,11 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchQuotes));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cancel = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.save = new System.Windows.Forms.Button();
             this.Nro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quoteDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,6 +38,11 @@
             this.drawers = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.material = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cancel = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.save = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,66 +63,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(911, 304);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lora", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label1.Location = new System.Drawing.Point(28, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 30);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Search Quote";
-            // 
-            // cancel
-            // 
-            this.cancel.BackColor = System.Drawing.Color.IndianRed;
-            this.cancel.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cancel.Font = new System.Drawing.Font("Lora", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancel.Location = new System.Drawing.Point(793, 442);
-            this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(151, 43);
-            this.cancel.TabIndex = 6;
-            this.cancel.Text = "Main Menu";
-            this.cancel.UseVisualStyleBackColor = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Laminate",
-            "Oak",
-            "Rosewood",
-            "Veneer",
-            "Pine"});
-            this.comboBox1.Location = new System.Drawing.Point(175, 78);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(169, 21);
-            this.comboBox1.TabIndex = 22;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Lora", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label6.Location = new System.Drawing.Point(108, 80);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 19);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "Material:";
-            // 
-            // save
-            // 
-            this.save.BackColor = System.Drawing.Color.LightGreen;
-            this.save.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.save.Font = new System.Drawing.Font("Lora", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.save.Location = new System.Drawing.Point(365, 66);
-            this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(151, 43);
-            this.save.TabIndex = 23;
-            this.save.Text = "Search";
-            this.save.UseVisualStyleBackColor = false;
             // 
             // Nro
             // 
@@ -164,7 +104,68 @@
             this.total.HeaderText = "Total cost ($)";
             this.total.Name = "total";
             // 
-            // SearchQuote
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lora", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label1.Location = new System.Drawing.Point(28, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 30);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Search Quote";
+            // 
+            // cancel
+            // 
+            this.cancel.BackColor = System.Drawing.Color.IndianRed;
+            this.cancel.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cancel.Font = new System.Drawing.Font("Lora", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancel.Location = new System.Drawing.Point(793, 442);
+            this.cancel.Name = "cancel";
+            this.cancel.Size = new System.Drawing.Size(151, 43);
+            this.cancel.TabIndex = 6;
+            this.cancel.Text = "Main Menu";
+            this.cancel.UseVisualStyleBackColor = false;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Laminate",
+            "Oak",
+            "Rosewood",
+            "Veneer",
+            "Pine"});
+            this.comboBox1.Location = new System.Drawing.Point(175, 78);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(169, 21);
+            this.comboBox1.TabIndex = 22;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Lora", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.label6.Location = new System.Drawing.Point(108, 80);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 19);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Material:";
+            // 
+            // save
+            // 
+            this.save.BackColor = System.Drawing.Color.LightGreen;
+            this.save.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.save.Font = new System.Drawing.Font("Lora", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save.Location = new System.Drawing.Point(365, 66);
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(151, 43);
+            this.save.TabIndex = 23;
+            this.save.Text = "Search";
+            this.save.UseVisualStyleBackColor = false;
+            // 
+            // SearchQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -178,7 +179,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "SearchQuote";
+            this.Name = "SearchQuotes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SearchQuote";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

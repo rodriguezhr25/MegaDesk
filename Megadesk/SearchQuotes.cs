@@ -21,5 +21,13 @@ namespace Megadesk
         {
 
         }
+
+        private void cancel_Click(object sender, EventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Tag = this;
+            mainMenu.Show(this);
+            Hide();
+        }
     }
 }

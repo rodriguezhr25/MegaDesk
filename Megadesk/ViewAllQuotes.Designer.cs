@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewAllQuotes));
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cancel = new System.Windows.Forms.Button();
             this.Nro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quoteDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,6 +39,7 @@
             this.drawers = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.material = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cancel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,19 +70,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(911, 304);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // cancel
-            // 
-            this.cancel.BackColor = System.Drawing.Color.IndianRed;
-            this.cancel.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cancel.Font = new System.Drawing.Font("Lora", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancel.Location = new System.Drawing.Point(803, 415);
-            this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(151, 43);
-            this.cancel.TabIndex = 5;
-            this.cancel.Text = "Main Menu";
-            this.cancel.UseVisualStyleBackColor = false;
             // 
             // Nro
             // 
@@ -124,6 +111,20 @@
             this.total.HeaderText = "Total cost ($)";
             this.total.Name = "total";
             // 
+            // cancel
+            // 
+            this.cancel.BackColor = System.Drawing.Color.IndianRed;
+            this.cancel.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cancel.Font = new System.Drawing.Font("Lora", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancel.Location = new System.Drawing.Point(803, 415);
+            this.cancel.Name = "cancel";
+            this.cancel.Size = new System.Drawing.Size(151, 43);
+            this.cancel.TabIndex = 5;
+            this.cancel.Text = "Main Menu";
+            this.cancel.UseVisualStyleBackColor = false;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
+            // 
             // ViewAllQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,6 +137,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ViewAllQuotes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quotes";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
