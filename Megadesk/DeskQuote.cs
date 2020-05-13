@@ -202,8 +202,8 @@ namespace Megadesk
             
         }
         /*
-          * the getTotalPrice method
-          * Purpose: to compute total desk cost
+          * the getSizeCost method
+          * Purpose: to compute total size cost
           */
         public double getSizeCost()
         {
